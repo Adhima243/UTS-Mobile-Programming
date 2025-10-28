@@ -1,16 +1,64 @@
-# uts1
+# Aplikasi Wisata Indonesia
 
-A new Flutter project.
+Aplikasi Wisata Indonesia adalah aplikasi Flutter sederhana yang menampilkan daftar tempat wisata populer di Indonesia.
+Aplikasi ini dibuat menggunakan data dummy (tanpa integrasi API atau database eksternal) dan bertujuan untuk melatih pemahaman dasar tentang UI Flutter, navigasi antar halaman, serta pengelolaan state sederhana.
 
-## Getting Started
+## 📱 Fitur Aplikasi
 
-This project is a starting point for a Flutter application.
+**🏖️ Beranda**
 
-A few resources to get you started if this is your first Flutter project:
+Menampilkan daftar tempat wisata lengkap dengan gambar, nama, lokasi, dan rating.
+Terdapat kolom pencarian serta filter kategori seperti Pantai, Gunung, dan Budaya.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+**❤️ Halaman Favorit**
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Pengguna dapat menandai tempat wisata favorit dengan ikon hati, dan data akan tampil di halaman ini.
+
+**👤 Profil**
+
+Menampilkan informasi pengembang serta deskripsi singkat tentang aplikasi.
+
+**📄 Detail Wisata**
+
+Menampilkan deskripsi lengkap dari setiap tempat wisata yang dipilih pengguna.
+
+
+## 🧱 Struktur Folder
+
+```
+
+assets/
+│
+├──images/
+│    ├── bali.jpg
+│    ├── borobudur.jpg
+│    ├── bromo.jpg
+│    ├── raja_ampat.jpg
+│    ├── toba.jpg
+│    ├── wakatobi.jpg
+│
+lib/
+│
+├── main.dart                # File utama aplikasi
+├── models/
+│   └── wisata.dart          # Model data dummy tempat wisata
+├── screens/
+│   ├── home_screen.dart     # Halaman beranda
+│   ├── favorite_screen.dart # Halaman favorit
+│   ├── profile_screen.dart  # Halaman profil
+│   └── detail_screen.dart   # Halaman detail wisata
+└── widgets/
+│    └── wisata_card.dart     # Widget tampilan kartu wisata
+│
+pubspec.yaml
+```
+
+## 🧩 Teknologi yang Digunakan
+
+- Flutter SDK
+  
+- Dart
+  
+- State Management sederhana (setState)
+  
+- Data Dummy lokal
