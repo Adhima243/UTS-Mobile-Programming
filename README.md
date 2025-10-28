@@ -39,17 +39,20 @@ assets/
 │
 lib/
 │
-├── main.dart                # File utama aplikasi
+├── main.dart                
 ├── models/
-│   └── wisata.dart          # Model data dummy tempat wisata
+│   └── destination.dart          
+├── data/ 
+│   └── destination_data.dart 
 ├── screens/
-│   ├── home_screen.dart     # Halaman beranda
-│   ├── favorite_screen.dart # Halaman favorit
-│   ├── profile_screen.dart  # Halaman profil
-│   └── detail_screen.dart   # Halaman detail wisata
-└── widgets/
-│    └── wisata_card.dart     # Widget tampilan kartu wisata
-│
+│   ├── home_screen.dart     
+│   ├── favorite_screen.dart 
+│   ├── profile_screen.dart  
+│   └── detail_screen.dart   
+├── widgets/
+│    ├── destination_card.dart     
+│    ├── category_selector.dart
+│    └── search_bar.dart 
 pubspec.yaml
 ```
 
